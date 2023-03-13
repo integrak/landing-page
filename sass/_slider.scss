@@ -1,0 +1,75 @@
+.slide {  
+      width: 1161px;
+      height: 470px;
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+      padding: 40px 0;
+  }
+.slide  input {
+      display: none;
+  }
+
+  .slide  input + label { 
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: #ffffff;
+      border: 3px solid #ffffff;
+      cursor: pointer;
+      z-index: 100;
+      position: relative;
+      margin-right: 15px;
+      top: 93%;
+      transition: background 0.8s ease-out 0s;
+  }
+
+  .slide  input + label:hover {
+      background: rgba(250, 250, 250, 0.8);
+  }
+
+  .slide  input:checked + label {
+      background: #001d1d;
+  }
+
+  .slide  div {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      z-index: 0;
+  }
+
+  .slide  div {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.8s ease-out 0.9s, visibility 0.1s ease-out 0.9s;
+  }
+
+  .slide  input:checked + label + div {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+  }
+
+  .slide  div  p {
+      width: 320px;
+      position: absolute;
+      font-size: 54px;
+      bottom: 40px;
+      left: 36px;
+      color: #ffffff;
+      text-transform: uppercase;
+      background: #1a1a1a; 
+      background-size: cover;
+      padding: 20px;
+      font-family: 'Ubuntu';
+      text-align: left;
+      line-height: 1;
+      white-space: pre-wrap;
+  }
+
+.slider-first-word {
+  color: #f4b60d;
+}
